@@ -129,13 +129,6 @@ export default class Main {
     var ground = this.createParallellepiped(20, 0.5, 20, 0, pos, quat, new THREE.MeshPhongMaterial({color: 0xffffff}));
     ground.castShadow = true;       // 开启投影
     ground.receiveShadow = true;    // 接受阴影(可以在表面上显示阴影)
-    // this.textureLoader.load("grass.png", function (texture) {
-    //     texture.wrapS = THREE.RepeatWrapping;
-    //     texture.wrapT = THREE.RepeatWrapping;
-    //     texture.repeat.set(40, 40);
-    //     ground.material.map = texture;
-    //     ground.material.needsUpdate = texture;
-    // });
 
     // 堆箱子
     let meatrial = this.createObjectMeatrial();
